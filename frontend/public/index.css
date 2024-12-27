@@ -1,0 +1,112 @@
+/* Reset margin and body settings */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  display: flex;
+  flex-direction: column; /* Arrange header and main content vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Background image styling */
+
+figure.background-figure {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  margin: 0;
+}
+
+figure.background-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: brightness(0.5);
+} 
+
+/* Header styling */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Optional background for header */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for separation */
+}
+
+header h1 {
+  color: rgb(248, 131, 15);
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Main content area */
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Add space below header */
+}
+
+/* Greeting styling */
+h2 {
+  color: rgb(248, 131, 15);
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: rgb(248, 131, 15);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(230, 100, 5);
+}
+
+::content {
+  color: red;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
