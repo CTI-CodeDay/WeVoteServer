@@ -19,7 +19,7 @@ social-auth-core==4.2.0
 ## Run your local python api server in SSL (https)
 
 In your environment_variables.json
-replace all (6) urls that contain `http://localhost:8000/` (or 8001), with `https://wevotedeveloper.com:8000/`
+replace all (6) urls that contain `https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/` (or 8001), with `https://wevotedeveloper.com:8000/`
 
 (Explanation at https://github.com/teddziuba/django-sslserver)
 
@@ -40,9 +40,9 @@ The first time you start up the [runsslserver](https://github.com/teddziuba/djan
 
 ### Make a small necessary change to your /etc/hosts
 
-Facebook will no longer redirect to localhost, so make a second alias for 127.0.0.1 with this made up domain: `wevotedeveloper.com`
+Facebook will no longer redirect to https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev, so make a second alias for 127.0.0.1 with this made up domain: `wevotedeveloper.com`
 
-From the python-social-auth docs: "[If you define a redirect URL in Facebook setup page, be sure to not define http://127.0.0.1:8000 or http://localhost:8000 because it won’t work when testing. Instead I define http://wevotedeveloper.com and setup a mapping on /etc/hosts.](https://python-social-auth.readthedocs.io/en/latest/backends/facebook.html)"
+From the python-social-auth docs: "[If you define a redirect URL in Facebook setup page, be sure to not define http://127.0.0.1:8000 or https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000 because it won’t work when testing. Instead I define http://wevotedeveloper.com and setup a mapping on /etc/hosts.](https://python-social-auth.readthedocs.io/en/latest/backends/facebook.html)"
 
 So we have to make a small change to /etc/hosts.  This is the before:
 ```
@@ -50,12 +50,12 @@ So we have to make a small change to /etc/hosts.  This is the before:
     ##
     # Host Database
     #
-    # localhost is used to configure the loopback interface
+    # https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev is used to configure the loopback interface
     # when the system is booting.  Do not change this entry.
     ##
-    127.0.0.1       localhost
+    127.0.0.1       https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev
     255.255.255.255 broadcasthost
-    ::1             localhost
+    ::1             https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev
     (venv2) stevepodell@StevesM1Dec2021 WeVoteServer % 
 ```
 We have added a fake local domain `wevotedeveloper.com` for the [Facebook Valid OAuth Redirect URIs](https://developers.facebook.com/apps/1097389196952441/fb-login/settings/), 
@@ -65,12 +65,12 @@ you need to add that domain to your 127.0.0.1 line in /etc/hosts.  After the cha
     ##
     # Host Database
     #
-    # localhost is used to configure the loopback interface
+    # https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev is used to configure the loopback interface
     # when the system is booting.  Do not change this entry.
     ##
-    127.0.0.1       localhost wevotedeveloper.com
+    127.0.0.1       https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev wevotedeveloper.com
     255.255.255.255 broadcasthost
-    ::1             localhost
+    ::1             https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev
     (venv2) stevepodell@StevesM1Dec2021 WeVoteServer % 
 ```
 

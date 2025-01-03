@@ -6,13 +6,13 @@
 ## Sample data
 Sample data is provided. Go here:
 
-    http://localhost:8000/admin
+   https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin
     
 Make sure you have given yourself admin privileges. When you run the following command, enter your email address and a simple password. This admin account is only used in development.
 
     python manage.py createsuperuser
     
-Find the "Sync Data with Master We Vote Servers" link, and click it: http://localhost:8000/admin/sync_dashboard/
+Find the "Sync Data with Master We Vote Servers" link, and click it: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin/sync_dashboard/
 
 Start by clicking the `Retrieve All Elections` link.
 

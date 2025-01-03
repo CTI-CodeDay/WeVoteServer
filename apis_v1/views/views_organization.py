@@ -234,7 +234,7 @@ def organization_index_view(request, organization_incoming_domain='', campaign_m
     else:
         req_url = 'https://wevote.us/main.name.html'
 
-    verify_bool = not ('localhost' in organization_incoming_domain or '127.0.0.1' in organization_incoming_domain)
+    verify_bool = not ('https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev' in organization_incoming_domain or '127.0.0.1' in organization_incoming_domain)
     text = requests.get(req_url, verify=verify_bool).text
     main_js = re.search(r"<body>(.*?)<\/body>", text)[1]
 

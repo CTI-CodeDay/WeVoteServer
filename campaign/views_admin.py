@@ -787,8 +787,8 @@ def campaign_summary_view(request, campaignx_we_vote_id=""):
     campaignx_supporter_list = list(supporters_query[:4])
 
     campaignx_supporters_count = campaignx_manager.fetch_campaignx_supporter_count(campaignx_we_vote_id)
-    if 'localhost' in CAMPAIGNS_ROOT_URL:
-        campaigns_site_root_url = 'https://localhost:3000'
+    if 'https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev' in CAMPAIGNS_ROOT_URL:
+        campaigns_site_root_url = 'https://https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:3000'
     else:
         campaigns_site_root_url = 'https://campaigns.WeVote.US'
     template_values = {

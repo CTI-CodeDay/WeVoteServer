@@ -26,7 +26,7 @@ psql (PostgreSQL) 14.0
 
 #### Setting up ngrok to send stripe webhooks to your local python server
 ```
-(WeVoteServerPy3.7) Steves-MacBook-Pro-32GB-Oct-2018:PycharmProjects stevepodell$ ~/PythonProjects/ngrok http 8000 -host-header="localhost:8000"
+(WeVoteServerPy3.7) Steves-MacBook-Pro-32GB-Oct-2018:PycharmProjects stevepodell$ ~/PythonProjects/ngrok http 8000 -host-header="https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000"
 
 ```
 A very useful http inspector is made available by ngrok at [http://127.0.0.1:4040/inspect/http](http://127.0.0.1:4040/inspect/http)
@@ -109,15 +109,15 @@ There has to be a better way to do this, but this is what I went through...
     2020-04-03 21:34:14.414 PDT [13229] HINT:  Is another postmaster (PID 13133) running in data directory "/usr/local/var/postgres"?
     (WeVoteServerPy3.7) stevepodell@Steves-MacBook-Pro-32GB-Oct-2018 var % !lsof
     lsof -i -P | grep post
-    postgres  13133 stevepodell    5u  IPv6 0x9139afcc2c95ec77      0t0  TCP localhost:5432 (LISTEN)
-    postgres  13133 stevepodell    6u  IPv4 0x9139afcc08c6d697      0t0  TCP localhost:5432 (LISTEN)
-    postgres  13133 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP localhost:57308->localhost:57308
-    postgres  13135 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP localhost:57308->localhost:57308
-    postgres  13136 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP localhost:57308->localhost:57308
-    postgres  13137 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP localhost:57308->localhost:57308
-    postgres  13138 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP localhost:57308->localhost:57308
-    postgres  13139 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP localhost:57308->localhost:57308
-    postgres  13140 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP localhost:57308->localhost:57308
+    postgres  13133 stevepodell    5u  IPv6 0x9139afcc2c95ec77      0t0  TCP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:5432 (LISTEN)
+    postgres  13133 stevepodell    6u  IPv4 0x9139afcc08c6d697      0t0  TCP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:5432 (LISTEN)
+    postgres  13133 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308->https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308
+    postgres  13135 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308->https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308
+    postgres  13136 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308->https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308
+    postgres  13137 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308->https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308
+    postgres  13138 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308->https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308
+    postgres  13139 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308->https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308
+    postgres  13140 stevepodell   10u  IPv6 0x9139afcc016b2ecf      0t0  UDP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308->https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:57308
     (WeVoteServerPy3.7) stevepodell@Steves-MacBook-Pro-32GB-Oct-2018 var % 
 ```
 #### Adding a new "app" (directory of Python classes) to the WeVoteServer

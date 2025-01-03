@@ -2,9 +2,9 @@
   "_comment":                       "Please see Password and Access key document for details about how to reset.",
 
   "_comment":                       "Note that WE_VOTE_SERVER_ROOT_URL should end without slash",
-  "WE_VOTE_SERVER_ROOT_URL":        "http://localhost:8000",
-  "WEB_APP_ROOT_URL":               "http://localhost:3000",
-  "CAMPAIGNS_ROOT_URL":             "http://localhost:3000",
+  "WE_VOTE_SERVER_ROOT_URL":        "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev",
+  "WEB_APP_ROOT_URL":               "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:3000",
+  "CAMPAIGNS_ROOT_URL":             "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:3000",
   "TIME_ZONE":                      "US/Pacific",
   "SERVER_IN_DEBUG_MODE":           true,
 
@@ -144,13 +144,13 @@
   "SOCIAL_AUTH_FACEBOOK_TOKEN":       "",
   "SOCIAL_AUTH_TWITTER_KEY":        "<This is Twitter's `Consumer Key`>",
   "SOCIAL_AUTH_TWITTER_SECRET":     "<This is Twitter's `Consumer Secret`>",
-  "SOCIAL_AUTH_LOGIN_URL":          "http://localhost:8000/login/",
-  "SOCIAL_AUTH_LOGIN_ERROR_URL":    "http://localhost:8000/login/",
-  "SOCIAL_AUTH_LOGIN_REDIRECT_URL": "http://localhost:8000/voter/login_complete/",
+  "SOCIAL_AUTH_LOGIN_URL":          "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/login/",
+  "SOCIAL_AUTH_LOGIN_ERROR_URL":    "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/login/",
+  "SOCIAL_AUTH_LOGIN_REDIRECT_URL": "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/voter/login_complete/",
   "SOCIAL_AUTH_REDIRECT_IS_HTTPS":  true,
 
-  "_comment":                       "stripe test 'Secret Key' (The 'Publishable key' is only used on the WebApp!)",
-  "STRIPE_SECRET_KEY":              "API Secret key begins with - pk_...",
+  "_comment":                       "(stripe test 'Secret Key' (The 'Publishable key' is only used on the WebApp!)",
+  "STRIPE_SECRET_KEY":              "sk_your_stripe_secret_key",
   "STRIPE_SIGNING_SECRET":          "",
   "STRIPE_REFUND_DAYS":             10,
 
@@ -183,9 +183,9 @@
   "VOTING_INFO_PROJECT_SAMPLE_XML_FILE": "import_export_voting_info_project/import_data/sample_feed.xml",
 
   "_comment":                       "Login settings",
-  "LOGIN_URL":                      "http://localhost:8000/login/",
-  "LOGIN_ERROR_URL":                "http://localhost:8000/login/",
-  "LOGIN_REDIRECT_URL":             "http://localhost:8000/admin/",
+  "LOGIN_URL":                      "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/login/",
+  "LOGIN_ERROR_URL":                "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/login/",
+  "LOGIN_REDIRECT_URL":             "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/admin/",
 
   "_comment":                       "GeoLite2 IP address database location",
   "GEOLITE2_DATABASE_LOCATION":     "geoip2/city-db/GeoLite2-City.mmdb",

@@ -144,7 +144,7 @@ SECRET_KEY = get_environment_variable("SECRET_KEY")
 
 # Comment out when running Heroku
 ALLOWED_HOSTS = [
-    'localhost',
+    'https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev',
     '127.0.0.1'
 ]
 

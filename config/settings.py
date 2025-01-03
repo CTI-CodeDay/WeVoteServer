@@ -20,3 +20,6 @@ except ImportError as e:
         from config.local import *
     except ImportError as e:
         pass
+
+WE_VOTE_SERVER_ROOT_URL = get_environment_variable("WE_VOTE_SERVER_ROOT_URL")
+

@@ -2,8 +2,11 @@
 # Brought to you by We Vote. Be good.
 # -*- coding: UTF-8 -*-
 
+
 from datetime import datetime, timedelta
 from django.http import HttpResponse
+
+from django.core.exceptions import ImproperlyConfigured
 import json
 import threading
 import time
@@ -21,11 +24,25 @@ from twitter.models import TwitterUserManager
 from voter.models import fetch_voter_we_vote_id_from_voter_device_link, VoterManager, VoterDeviceLinkManager, \
     VoterDeviceLink
 from wevote_functions.functions import get_voter_device_id, positive_value_exists, wevote_functions
+import os
+from django.core.exceptions import ImproperlyConfigured
+from wevote_functions.functions import wevote_functions
+
+def get_environment_variable(var_name):
+    try:
+        return os.environ[var_name]
+    except KeyError:
+        error_msg = f"ERROR: Unable to set the {var_name} variable from os.environ or JSON file"
+        raise ImproperlyConfigured(error_msg)
+
+# Use the correct environment variable names
+WE_VOTE_SERVER_ROOT_URL = get_environment_variable("WE_VOTE_SERVER_ROOT_URL")
+STRIPE_SECRET_KEY = get_environment_variable("STRIPE_SECRET_KEY")
+
+if not STRIPE_SECRET_KEY.startswith('sk_'):
+    raise ImproperlyConfigured("Configuration error, the stripe secret key, must begin with 'sk_' -- don't use the publishable key on the server!")
 
 logger = wevote_functions.admin.get_logger(__name__)
-
-WE_VOTE_SERVER_ROOT_URL = get_environment_variable("WE_VOTE_SERVER_ROOT_URL")
-
 
 def activity_comment_save_view(request):  # activityCommentSave
     """

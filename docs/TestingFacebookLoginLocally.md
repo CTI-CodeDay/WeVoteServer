@@ -1,5 +1,5 @@
 # Testing Facebook Sign In with a Physical Tethered Phone in Cordova
-The phone can't access localhost, so we need to run ngrok, and configure the webapp to access the local Python Server voa ngrok
+The phone can't access https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev, so we need to run ngrok, and configure the webapp to access the local Python Server voa ngrok
 
 In a terminal in PyCharm:
 
@@ -14,8 +14,8 @@ In a terminal in PyCharm:
     Version                       2.3.35                                                                                                                                                      
     Region                        United States (us)                                                                                                                                          
     Web Interface                 http://127.0.0.1:4040                                                                                                                                       
-    Forwarding                    http://d74f-2601-643-8400-5b80-7cad-2933-47a9-26ea.ngrok.io -> http://localhost:8000                                                                        
-    Forwarding                    https://d74f-2601-643-8400-5b80-7cad-2933-47a9-26ea.ngrok.io -> http://localhost:8000                                                                       
+    Forwarding                    http://d74f-2601-643-8400-5b80-7cad-2933-47a9-26ea.ngrok.io -> https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000                                                                        
+    Forwarding                    https://d74f-2601-643-8400-5b80-7cad-2933-47a9-26ea.ngrok.io -> https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000                                                                       
                                                                                                                       
 
 In the WebApp config.js file:

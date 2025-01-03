@@ -51,7 +51,7 @@ After this, restart the Django app so that it reloads these variables. To do thi
 1. From `/path/to/WeVote-Vagrant`, run `vagrant ssh`. This logs you into the Vagrant box.
 2. Run `sudo supervisorctl restart wevoteserver`. This forces Gunicorn, the app server, to restart.
 
-Note the URL specified for the API server in those env vars: https://localhost:8889/ Try this after you restart Gunicorn.
+Note the URL specified for the API server in those env vars: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8889/ Try this after you restart Gunicorn.
 
 From here, you should be able to continue with the [app setup instructions](https://github.com/wevote/WeVoteServer/blob/develop/docs/README_API_INSTALL_SETUP_DATABASE.md#grant-yourself-admin-rights).
 

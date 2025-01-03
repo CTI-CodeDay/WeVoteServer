@@ -52,7 +52,7 @@ Open pgAdmin 4 and navigate to:
 
 3) Switch to "Connection" tab
 
-3a) Host name: localhost
+3a) Host name: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev
 
 3b) Port: 5432
 

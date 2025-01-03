@@ -9,6 +9,8 @@ This is called from config/urls.py like this:
 from django.conf import settings
 from django.conf.urls import re_path
 from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import path
 
 from apis_v1.views import views_activity, views_apple, views_docs, views_analytics, views_ballot, \
     views_campaign, views_candidate, views_donation, \
@@ -33,6 +35,7 @@ from position.views_admin import positions_sync_out_view
 from voter_guide.views_admin import voter_guides_sync_out_view
 
 urlpatterns = [
+        path('admin/', admin.site.urls),
       # Actual API Calls
       re_path(r'^activityCommentSave/',
               views_activity.activity_comment_save_view, name='activityCommentSaveView'),
