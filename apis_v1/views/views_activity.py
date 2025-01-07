@@ -42,6 +42,8 @@ STRIPE_SECRET_KEY = get_environment_variable("STRIPE_SECRET_KEY")
 if not STRIPE_SECRET_KEY.startswith('sk_'):
     raise ImproperlyConfigured("Configuration error, the stripe secret key, must begin with 'sk_' -- don't use the publishable key on the server!")
 
+
+
 logger = wevote_functions.admin.get_logger(__name__)
 
 def activity_comment_save_view(request):  # activityCommentSave

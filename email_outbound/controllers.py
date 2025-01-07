@@ -992,6 +992,8 @@ def voter_email_address_retrieve_for_api(voter_device_id):  # voterEmailAddressR
     :param voter_device_id:
     :return:
     """
+    print("==== In voter_email_address_retrieve_for_api from email_outbound/controllers ====:")
+
     email_address_list_found = False
     status = ""
     success = True
