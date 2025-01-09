@@ -929,6 +929,7 @@ def voter_email_address_retrieve_view(request):  # voterEmailAddressRetrieve
         'email_address_list':       results['email_address_list'],
     }
     return HttpResponse(json.dumps(json_data), content_type='application/json')
+    
 
 
 def voter_email_address_save_view(request):  # voterEmailAddressSave

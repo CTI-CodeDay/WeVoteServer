@@ -11,6 +11,8 @@ import pathlib
 import re
 from django.core.exceptions import ImproperlyConfigured
 from django.db import connection
+import sys
+sys.path.append("/home/codespace/WeVoteServer3.5/WeVoteServer/lib/python3.8/site-packages/")
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -142,7 +144,7 @@ SECRET_KEY = get_environment_variable("SECRET_KEY")
 
 # Comment out when running Heroku
 ALLOWED_HOSTS = [
-    'localhost',
+    'https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev',
     '127.0.0.1'
 ]
 

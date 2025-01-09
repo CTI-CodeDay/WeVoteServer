@@ -70,7 +70,7 @@ public internet.
 Python server's port 8000.
 
     ```
-    (WeVoteServerPy3.7) Steves-MacBook-Pro-32GB-Oct-2018:PycharmProjects stevepodell$ ~/PythonProjects/ngrok http 8000 -host-header="localhost:8000"
+    (WeVoteServerPy3.7) Steves-MacBook-Pro-32GB-Oct-2018:PycharmProjects stevepodell$ ~/PythonProjects/ngrok http 8000 -host-header="https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000"
 
  
    ngrok by @inconshreveable                                                                                                                                                  (Ctrl+C to quit)
@@ -81,8 +81,8 @@ Python server's port 8000.
     Version                       2.3.35                                                                                                                                                       
     Region                        United States (us)                                                                                                                                           
     Web Interface                 http://127.0.0.1:4040                                                                                                                                        
-    Forwarding                    http://81428060fbe4.ngrok.io -> http://localhost:8000                                                                                                        
-    Forwarding                    https://81428060fbe4.ngrok.io -> http://localhost:8000                                                                                                                                                                                                        
+    Forwarding                    http://81428060fbe4.ngrok.io -> https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000                                                                                                       
+    Forwarding                    https://81428060fbe4.ngrok.io -> https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000                                                                                                                                                                                                        
     Connections                   ttl     opn     rt1     rt5     p50     p90                                                                                                                  
                                   0       0       0.00    0.00    0.00    0.00                                                                                                                 
  
@@ -114,12 +114,12 @@ https://81428060fbe4.ngrok.io/apis/v1/donationStripeWebhook/)
     // Note that we import these values into "webAppConfig" (so we can search for it)
     module.exports = {
       WE_VOTE_URL_PROTOCOL: "http://", // "http://" for local dev or "https://" for live server
-      WE_VOTE_HOSTNAME: "localhost:3000", // This should be without "http...". This is "WeVote.US" on live server.
+      WE_VOTE_HOSTNAME: "https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:3000", // This should be without "http...". This is "WeVote.US" on live server.
     
-      WE_VOTE_SERVER_ROOT_URL: "http://localhost:8000/",
-      WE_VOTE_SERVER_ADMIN_ROOT_URL: "http://localhost:8000/admin/",
-      WE_VOTE_SERVER_API_ROOT_URL: "http://localhost:8000/apis/v1/",
-      WE_VOTE_SERVER_API_CDN_ROOT_URL: "http://localhost:8000/apis/v1/",
+      WE_VOTE_SERVER_ROOT_URL: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/",
+      WE_VOTE_SERVER_ADMIN_ROOT_URL: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin/",
+      WE_VOTE_SERVER_API_ROOT_URL: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/apis/v1/",
+      WE_VOTE_SERVER_API_CDN_ROOT_URL: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/apis/v1/",
     
       // WE_VOTE_SERVER_ROOT_URL: "https://api.wevoteusa.org/",
       // WE_VOTE_SERVER_ADMIN_ROOT_URL: "https://api.wevoteusa.org/admin/",
@@ -129,7 +129,7 @@ https://81428060fbe4.ngrok.io/apis/v1/donationStripeWebhook/)
 
 1. Run `npm run` on your WebApp
 
-    And your localhost WebApp should be communicating with your localhost Python server.
+    And your https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev WebApp should be communicating with your https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev Python server.
 
 1.  Send a test webhook from the console, using charge.updated - the dummy data it sends will not effect anything, but you should see
 a note in the Python Console log ...

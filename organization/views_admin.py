@@ -1061,7 +1061,7 @@ def organization_edit_account_view(request, organization_id=0, organization_we_v
     # Sort by organization_type value (instead of key)
     organization_types_list = sorted(organization_types_map.items(), key=operator.itemgetter(1))
 
-    on_development_server = 'localhost' in WE_VOTE_SERVER_ROOT_URL
+    on_development_server = 'https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev' in WE_VOTE_SERVER_ROOT_URL
     if organization_on_stage_found:
         template_values = {
             'google_civic_election_id': google_civic_election_id,
@@ -1702,7 +1702,7 @@ def organization_edit_account_process_view(request):
 
     # Now see about adding chosen_subdomain_string networking information
     if positive_value_exists(chosen_subdomain_string_allowed):
-        on_development_server = 'localhost' in WE_VOTE_SERVER_ROOT_URL
+        on_development_server = 'https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev' in WE_VOTE_SERVER_ROOT_URL
         if on_development_server:
             status += "FASTLY_NOT_UPDATED-ON_DEVELOPMENT_SERVER: " + str(WE_VOTE_SERVER_ROOT_URL) + " "
         elif positive_value_exists(chosen_subdomain_string) or positive_value_exists(chosen_subdomain_string_previous):

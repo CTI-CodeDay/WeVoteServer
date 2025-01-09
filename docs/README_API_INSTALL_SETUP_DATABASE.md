@@ -58,7 +58,7 @@ Start up the WeVoteServer on Linux:
 
 Find admin tools here:
 
-    http://localhost:8000/admin
+    http://https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/:8000/admin
 
 Now you will need to authenticate as an admin. You can log in with Email or Twitter account or Facebook account.
 
@@ -107,7 +107,7 @@ If you do not see "WeVoteServer", then do the following:
 
 3) Switch to "Connection" tab
 
-3a) Host name: localhost
+3a) Host name: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/
 
 3b) Port: 5432
 
@@ -144,11 +144,11 @@ Once you see "admin: True" on your account page, sign out, and sign in again. Th
 
 Now, you should be able to access the admin tools here:
 
-    http://localhost:8000/admin
+    http://https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/:8000/admin
 
 Find documentation for all the APIs here:
 
-    http://localhost:8000/apis/v1/docs
+    http://https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev/:8000/apis/v1/docs
 
 
 [NEXT: 6. Set up Initial Data](README_API_INSTALL_SETUP_DATA.md)

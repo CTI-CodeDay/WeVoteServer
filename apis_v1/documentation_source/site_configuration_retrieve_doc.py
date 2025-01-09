@@ -34,7 +34,7 @@ def site_configuration_retrieve_doc_template_values(url_root):
         },
     ]
     try_now_link_variables_dict = {
-        'hostname': 'localhost',
+        'hostname': 'https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev',
     }
 
     api_response = '{\n' \

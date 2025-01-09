@@ -118,7 +118,7 @@ Open pgAdmin 4 and navigate to:
     ![ScreenShot](images/CreateServerDialog.png)
 
 3. Switch to "Connection" tab
-   * Host name: localhost
+   * Host name: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev
    * Port: 5432
    * Maintenance database: postgres
    * User name: postgres

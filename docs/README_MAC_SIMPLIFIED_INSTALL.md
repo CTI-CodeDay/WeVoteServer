@@ -232,8 +232,8 @@ this step.  To see if postgres is already running, check with lsof in a terminal
 
     ```
     (venv) $ lsof -i -P | grep -i "listen" | grep postgres
-    postgres  13254 admin    5u  IPv6 0x35032d9cf207f247      0t0  TCP localhost:5432 (LISTEN)
-    postgres  13254 admin    6u  IPv4 0x35032d9d01cd2647      0t0  TCP localhost:5432 (LISTEN)
+    postgres  13254 admin    5u  IPv6 0x35032d9cf207f247      0t0  TCP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:5432 (LISTEN)
+    postgres  13254 admin    6u  IPv4 0x35032d9d01cd2647      0t0  TCP https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:5432 (LISTEN)
     (venv) $
     ```  
  
@@ -356,7 +356,7 @@ this step.  To see if postgres is already running, check with lsof in a terminal
    <img width="500" src="https://raw.githubusercontent.com/wevote/WeVoteServer/develop/docs/images/CreateServerDialog.png"> 
 
 9. Switch to "Connection" tab, and enter the following information:
-   * Host name: localhost
+   * Host name: https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev
    * Port: 5432
    * Maintenance database: postgres
    * User name: postgres
@@ -450,7 +450,7 @@ this step.  To see if postgres is already running, check with lsof in a terminal
     
     At WeVote, we call end users "voters".  This new "voter" will have all the 
     rights that you (as a developer) need to log in to 
-    [http://localhost:8000/admin/](http://localhost:8000/admin/).  Once logged in you can start synchronizing data (downloading ballot and issue 
+    [https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin/](https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin/).  Once logged in you can start synchronizing data (downloading ballot and issue 
     data from the master server in the cloud, to your local server).
     
    The usage is:  `python manage.py create_dev_user first_name last_name email password`
@@ -462,7 +462,7 @@ this step.  To see if postgres is already running, check with lsof in a terminal
     (WeVoteServer3.7) admin$ 
     ```
     
-1.  Navigate to [http://localhost:8000/admin/](http://localhost:8000/admin/) and sign in with your new username/password.    
+1.  Navigate to [https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin/](https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin/) and sign in with your new username/password.    
 
 1.  Your local instance of the WeVoteServer is now setup and running (although there is no election 
     data stored in your Postgres instance, for it to serve to clients at this point).

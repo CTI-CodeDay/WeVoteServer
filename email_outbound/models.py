@@ -672,6 +672,7 @@ class EmailManager(models.Manager):
         :param voter_we_vote_id:
         :return:
         """
+        
         status = ""
         if not positive_value_exists(voter_we_vote_id):
             success = False

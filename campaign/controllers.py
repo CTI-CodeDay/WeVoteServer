@@ -15,6 +15,7 @@ from voter.models import VoterManager
 import wevote_functions.admin
 from wevote_functions.functions import generate_date_as_integer, positive_value_exists
 
+
 logger = wevote_functions.admin.get_logger(__name__)
 
 # Search for in image/controllers.py as well

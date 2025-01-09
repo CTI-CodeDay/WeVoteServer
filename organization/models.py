@@ -711,8 +711,8 @@ class OrganizationManager(models.Manager):
             }
             return results
 
-        if incoming_hostname == 'localhost':
-            status += "INCOMING_HOSTNAME_IS_LOCALHOST "
+        if incoming_hostname == 'https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev':
+            status += "INCOMING_HOSTNAME_IS_https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev "
             results = {
                 'success': True,
                 'status': True,

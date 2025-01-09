@@ -26,15 +26,15 @@ Here are some commands we use quite a lot:
     $ source /Users/<YOUR NAME HERE>/PythonEnvironments/WeVoteServer3.4/bin/activate
     $ python manage.py runserver
 
-Find API admin tools here [http://localhost:8000/admin](http://localhost:8000/admin)
+Find API admin tools here [https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin](https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin)
 
-Find documentation for all the APIs here [http://localhost:8000/apis/v1/docs](http://localhost:8000/apis/v1/docs)
+Find documentation for all the APIs here [https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/apis/v1/docs](https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/apis/v1/docs)
 
 ## Test Data
 
 In order to effectively work with WeVoteServer, you will need election data. We have made it easy to set up your 
 database with initial data that will help you do development. Visit the Admin Menu 
-[http://localhost:8000/admin](http://localhost:8000/admin) on your local machine and click the
+[https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin](https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev:8000/admin) on your local machine and click the
 "Import Test Data" link. The first time this runs, it can take 60-120 seconds.
 
 

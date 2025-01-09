@@ -24,7 +24,7 @@ DATABASES = {
         'NAME':     get_environment_variable('DATABASE_NAME'),
         'USER':     get_environment_variable('DATABASE_USER'),
         'PASSWORD': get_environment_variable('DATABASE_PASSWORD'),
-        'HOST':     get_environment_variable('DATABASE_HOST'),  # localhost
+        'HOST':     get_environment_variable('DATABASE_HOST'),  # https://super-lamp-44gw5w5jjwp3jrpr-8000.app.github.dev
         'PORT':     get_environment_variable('DATABASE_PORT'),  # 5432
     },
     'readonly': {
