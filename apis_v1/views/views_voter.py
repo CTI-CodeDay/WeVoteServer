@@ -918,7 +918,6 @@ def voter_email_address_retrieve_view(request):  # voterEmailAddressRetrieve
     :param request:
     :return:
     """
-    print("========= In voter_email_address_retrieve_view ==========: ")
     voter_device_id = get_voter_device_id(request)  # We standardize how we take in the voter_device_id
     results = voter_email_address_retrieve_for_api(voter_device_id=voter_device_id)
 

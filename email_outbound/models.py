@@ -672,9 +672,7 @@ class EmailManager(models.Manager):
         :param voter_we_vote_id:
         :return:
         """
-        print("=== In retrieve_voter_email_address_list ===")
-
-
+        
         status = ""
         if not positive_value_exists(voter_we_vote_id):
             success = False
